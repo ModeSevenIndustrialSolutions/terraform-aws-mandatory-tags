@@ -44,7 +44,7 @@ variable "environment" {
   default     = "test"
   validation {
     condition     = can(regex("(^test$)|(^production$)(^staging$)|", var.environment))
-    error_message = "The environment value can be either: [test|production|staging]"
+    error_message = "The environment value must be specified as: [ test | production | staging ]"
   }
 }
 
