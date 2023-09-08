@@ -74,9 +74,9 @@ Code example:
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | N/A |
+| Name                                             | Version |
+| ------------------------------------------------ | ------- |
+| <a name="provider_aws"></a> [aws](#provider_aws) | N/A     |
 
 ## Modules
 
@@ -84,29 +84,29 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
+| Name                                                                                                                                  | Type        |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity)         | data source |
 | [aws_caller_identity.current.user_id](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_application"></a> [application](#input\_application) | Application name and/or identifier | `string` | `null` | yes |
-| <a name="input_creator"></a> [creator](#input\_creator) | The framework, tool, and/or method that created this resource - terraform, serverless, pulumi, manual, etc. | `string` | `"terraform"` | yes |
-| <a name="input_created"></a> [creator](#input\_created) | The date this resource was created in %Y-%m-%d format | `string` | `"terraform"` | yes |
-| <a name="input_account"></a> [account](#input\_account) | The IAM user or role that deployed the infrastructure | `string` | n/a | yes |
-| <a name="input_environment"></a> [environment](#input\_environment) | The environment does this resource belong to? - sandbox, nonprod, prod | `string` | n/a | yes |
-| <a name="input_billing"></a> [billing](#input\billing) | The organisation/project/entity responsible for resource costs | `string` | n/a | yes |
-| <a name="input_origin"></a> [origin](#input\_origin) | The repository where the relevant code is stored | `string` | n/a | yes |
-
+| Name                                                               | Description                                                                                                 | Type     | Default       | Required |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | -------- | ------------- | :------: |
+| <a name="input_application"></a> [application](#input_application) | Application name and/or identifier                                                                          | `string` | `null`        |   yes    |
+| <a name="input_creator"></a> [creator](#input_creator)             | The framework, tool, and/or method that created this resource - terraform, serverless, pulumi, manual, etc. | `string` | `"terraform"` |   yes    |
+| <a name="input_created"></a> [creator](#input_created)             | The date this resource was created in %Y-%m-%d format                                                       | `string` | `"terraform"` |   yes    |
+| <a name="input_account"></a> [account](#input_account)             | The IAM user or role that deployed the infrastructure                                                       | `string` | n/a           |   yes    |
+| <a name="input_environment"></a> [environment](#input_environment) | The environment does this resource belong to? - sandbox, nonprod, prod                                      | `string` | n/a           |   yes    |
+| <a name="input_billing"></a> [billing](#input\billing)             | The organisation/project/entity responsible for resource costs                                              | `string` | n/a           |   yes    |
+| <a name="input_origin"></a> [origin](#input_origin)                | The repository where the relevant code is stored                                                            | `string` | n/a           |   yes    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_tags"></a> [tags](#output\_tags) | Tags which are applicable to all resources - map of `{key: value}` pairs |
+| Name                                            | Description                                                              |
+| ----------------------------------------------- | ------------------------------------------------------------------------ |
+| <a name="output_tags"></a> [tags](#output_tags) | Tags which are applicable to all resources - map of `{key: value}` pairs |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 # License
